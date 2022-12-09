@@ -1,34 +1,32 @@
 import logo from "./logo.svg";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./components/Header";
 import About from "./components/About";
-import Work from "./components/Work";
+import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
-const sections = ["About", "Work", "Contact", "Resume"];
+const sections = ["About Me", "Contact", "Portfolio", "Resume"];
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("About");
+  const [currentPage, setCurrentPage] = useState("About Me");
   console.log(currentPage);
   return (
     <div className="App">
       <Header sections={sections} setCurrentPage={setCurrentPage} />
       <main>
-        {currentPage === 'About'? <About /> : <></>} 
-        { currentPage === 'Work'? <Work /> : <></>} 
-        { currentPage === 'Contact'? <Contact /> : <></>}
+        {currentPage === "About Me" ? <About /> : <></>}
+        {currentPage === "Contact" ? <Contact /> : <></>}
+        {currentPage === "Portfolio" ? <Portfolio /> : <></>}
+        {currentPage === "Resume" ? <Resume /> : <></>}
         {/* <Resume /> */}
       </main>
-      <footer>
-        <p>© 2022 by John Aslani</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
 
 export default App;
-
-{
-  /* Bio: I am Sr. Medical Data Scientists at Lab 126, Amazon. I love to expand debth of my technical skills. This is why I joined coding bootcamp. */
-}
