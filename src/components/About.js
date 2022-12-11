@@ -8,7 +8,7 @@ function About() {
         <img src={pic} />
         <figcaption>John Aslani</figcaption>
       </figure>
-      <p class="highlighted-text">
+      <p className="highlighted-text">
         I am Sr. Medical Data Scientists at Lab 126, Amazon. I love to expand
         debth of my technical skills. This is why I joined coding bootcamp. 15+
         years of progressive experience in healthcare data and information

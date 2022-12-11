@@ -1,4 +1,7 @@
 import { IoLogoLinkedin } from "react-icons/io";
+import { SiGooglescholar } from "react-icons/si";
+import { AiFillGithub } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
 
 function Footer() {
   return (
@@ -10,17 +13,23 @@ function Footer() {
         <div className="d-flex justify-content-between w-100">
           <div className="hover">
             <a href="https://www.linkedin.com/in/afshinaslani/">
-              <IoLogoLinkedin />
+              <IoLogoLinkedin /> Linkedin
             </a>
           </div>
-          <div class="hover">
-            <a href="mailto:aslani.john@gmail.com"> Mail Icon</a>
-          </div>
-          <div class="hover">
-            <a href="https://github.com/johnaslani">GitHub Icon</a>
+          <div className="hover">
+            <a href="https://github.com/johnaslani">
+              <AiFillGithub /> GitHub
+            </a>
           </div>
           <div className="hover">
-            <a href="mailto:aslani.john@gmail.com">Google Scholar</a>
+            <a href="mailto:aslani.john@gmail.com">
+              <SiGooglescholar /> Google Scholar
+            </a>
+          </div>
+          <div className="hover">
+            <a href="mailto:aslani.john@gmail.com">
+              <AiOutlineMail /> Email
+            </a>
           </div>
         </div>
         {/* <br><p class="text-center card-text">Phone: 734-531-8171 Email: aslani.john@gmail.com</p>

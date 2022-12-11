@@ -13,18 +13,6 @@ function Header({ sections, setCurrentPage }) {
               {section}
             </li>
           ))}
-          {/* <li>
-            <a href="#aboutMe">About me</a>
-          </li>
-          <li>
-            <a href="#myWork">Portfolio</a>
-          </li>
-          <li>
-            <a href="#contactMe">Contact</a>
-          </li>
-          <li>
-            <a href="#resume">Resume</a>
-          </li> */}
         </ul>
       </nav>
     </header>
