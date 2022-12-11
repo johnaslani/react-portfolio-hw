@@ -16,7 +16,7 @@ function App() {
   console.log(currentPage);
   return (
     <div className="App">
-      <Header sections={sections} setCurrentPage={setCurrentPage} />
+      <Header sections={sections} currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <main>
         {currentPage === "About Me" ? <About /> : <></>}
         {currentPage === "Contact" ? <Contact /> : <></>}

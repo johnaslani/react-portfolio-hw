@@ -1,4 +1,4 @@
-function Header({ sections, setCurrentPage }) {
+function Header({ sections, currentPage, setCurrentPage }) {
   return (
     <header className="App-header">
       <h1 className="jumbotron">John Aslani</h1>
@@ -6,7 +6,7 @@ function Header({ sections, setCurrentPage }) {
         <ul className="navLinks">
           {sections.map((section) => (
             <li
-              className="navLink"
+              className= {currentPage===section?"navLinkActive":"navLink"}
               key={section}
               onClick={() => setCurrentPage(section)}
             >

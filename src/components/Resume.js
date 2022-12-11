@@ -1,8 +1,9 @@
+import resume from "../assets/docs/Resume.pdf";
+
 function Resume() {
   return (
     <section id="resume">
-      <h2>My Resume</h2>
-      <h2>Full Stack Development roficiencies</h2>
+      <h2 className="resume">Full Stack Development Proficiencies</h2>
       <br></br>
       <h3>Front-End</h3>
       <ul>
@@ -27,10 +28,10 @@ function Resume() {
         <li>MVC</li>
         <li>ODM</li>
       </ul>
-      <h3>Resume and Certifications</h3>
+      <h2 className="resume">Resume and Certifications</h2>
       <ul>
         <li>
-          <a href="../assets/docs/Resume.pdf" download="Resume.pdf">
+          <a href={resume} download="Resume.pdf">
             <strong>Resume</strong>
           </a>
         </li>

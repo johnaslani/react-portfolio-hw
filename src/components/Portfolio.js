@@ -1,29 +1,94 @@
+import pic1 from "../assets/images/Portfolio.PNG";
+import pic2 from "../assets/images/DigitalMarketing.PNG";
+import pic3 from "../assets/images/WorkDayScheduler.gif";
+import pic4 from "../assets/images/Quiz.gif";
+import pic5 from "../assets/images/Portfolio.PNG";
+import pic6 from "../assets/images/Weather_Dashboard.PNG";
+import { AiFillGithub } from "react-icons/ai";
+import Project from "./Project";
+
+const projects = [
+  {
+    link: "https://johnaslani.github.io/Portfolio/",
+    name: "Portfolio",
+    repo: "https://github.com/johnaslani/Portfolio/",
+    img: pic1,
+    alt: "Portflio project",
+  },
+  {
+    link: "https://johnaslani.github.io/Code-Refactor/",
+    name: "Code Refractor",
+    repo: "https://github.com/johnaslani/Code-Refactor/",
+    img: pic2,
+    alt: "Code Refractor project",
+  },
+  {
+    link: "https://johnaslani.github.io/Portfolio/",
+    name: "Portfolio",
+    repo: "https://github.com/johnaslani/Portfolio/",
+    img: pic1,
+    alt: "Portflio project",
+  },
+  {
+    link: "https://johnaslani.github.io/Portfolio/",
+    name: "Portfolio",
+    repo: "https://github.com/johnaslani/Portfolio/",
+    img: pic1,
+    alt: "Portflio project",
+  },
+  {
+    link: "https://johnaslani.github.io/Portfolio/",
+    name: "Portfolio",
+    repo: "https://github.com/johnaslani/Portfolio/",
+    img: pic1,
+    alt: "Portflio project",
+  },
+  {
+    link: "https://johnaslani.github.io/Portfolio/",
+    name: "Portfolio",
+    repo: "https://github.com/johnaslani/Portfolio/",
+    img: pic1,
+    alt: "Portflio project",
+  },
+];
+
 function Portfolio() {
   return (
     <section id="myWork">
       <h2>My Portfolio</h2>
-      <p>
-        <ul>
-          <li>
-            <strong>First project: </strong>
-            <a href="https://johnaslani.github.io/Portfolio/">
-              <strong>Portflio</strong>
+      <div>
+        <ul className="projects">
+          {projects.map((project) => (
+            <Project project={project} />
+          ))}
+          {/* <li className="project">
+            <div>
+              <a
+                href="https://johnaslani.github.io/Portfolio/"
+                className="projectLink"
+              >
+                Portflio
+              </a>
+              <a
+                href="https://github.com/johnaslani/Portfolio/"
+                className="projectLink"
+              >
+                <AiFillGithub />
+              </a>
+            </div>
+            <a
+              href="https://johnaslani.github.io/Portfolio/"
+              className="projectLink"
+            >
+              <img src={pic1} alt="Portflio project" />
             </a>
-            <img
-              src="https://github.com/johnaslani/Portfolio/blob/main/assets/afshin.jpg"
-              // alt="First project picture"
-            />
-            <a href="https://github.com/johnaslani/Portfolio/"></a>
           </li>
           <li>
             <strong>Second project: </strong>
             <a href="https://johnaslani.github.io/Code-Refactor/">
               <strong>Code Refractor</strong>
             </a>
-            <img
-              src="https://github.com/johnaslani/Code-Refactor/blob/main/asset/images/01-html-css-git-homework-demo.png"
-              // alt="Second project picture"
-            />
+            <img src={pic2} alt="Second project" />
             <a href="https://github.com/johnaslani/Code-Refactor/"></a>
           </li>
           <li>
@@ -32,7 +97,7 @@ function Portfolio() {
               <strong>Work Day Scheduler</strong>
             </a>
             <img
-              src="https://github.com/johnaslani/Work-Day-Scheduler/blob/main/Assets/Screenshot_5.PNG"
+              src={pic3}
               // alt="Third project picture"
             />
             <a href="https://github.com/johnaslani/Work-Day-Scheduler"></a>
@@ -43,7 +108,7 @@ function Portfolio() {
               <strong>Quiz</strong>
             </a>
             <img
-              src="https://github.com/johnaslani/Quiz/blob/main/Assets/04-web-apis-homework-demo.gif"
+              src={pic4}
               // alt="Fourth project picture"
             />
             <a href="https://github.com/johnaslani/Quiz"></a>
@@ -53,7 +118,7 @@ function Portfolio() {
             <a href="https://johnaslani.github.io/README-Generator/">
               <strong>Coming soon!</strong>
             </a>
-            <img src="" alt="Fifth project picture" />
+            <img src={pic5} alt="Fifth project picture" />
             <a href="https://johnaslani.github.io/README-Generator/"></a>
           </li>
           <li>
@@ -62,13 +127,13 @@ function Portfolio() {
               <strong>Weather Dashboard</strong>
             </a>
             <img
-              src="https://github.com/johnaslani/Weather-Dashboard/blob/main/assets/src/Weather_Dashboard.PNG"
+              src={pic6}
               // alt="Sixth project picture"
             />
             <a href="https://github.com/johnaslani/Weather-Dashboard"></a>
-          </li>
+          </li> */}
         </ul>
-      </p>
+      </div>
     </section>
   );
 }

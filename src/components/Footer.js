@@ -7,27 +7,27 @@ function Footer() {
   return (
     <footer
       id="footer"
-      className="d-flex bottom flex-column flex-sm-row justify-content-between py-5 my border-top bg-secondary"
+      className="d-flex bottom flex-column flex-sm-row justify-content-between py-5 my border-top"
     >
       <div className="d-flex flex-column w-100">
         <div className="d-flex justify-content-between w-100">
           <div className="hover">
-            <a href="https://www.linkedin.com/in/afshinaslani/">
+            <a href="https://www.linkedin.com/in/afshinaslani/" className="footerLink">
               <IoLogoLinkedin /> Linkedin
             </a>
           </div>
           <div className="hover">
-            <a href="https://github.com/johnaslani">
+            <a href="https://github.com/johnaslani" className="footerLink">
               <AiFillGithub /> GitHub
             </a>
           </div>
           <div className="hover">
-            <a href="mailto:aslani.john@gmail.com">
+            <a href="mailto:aslani.john@gmail.com" className="footerLink">
               <SiGooglescholar /> Google Scholar
             </a>
           </div>
           <div className="hover">
-            <a href="mailto:aslani.john@gmail.com">
+            <a href="mailto:aslani.john@gmail.com" className="footerLink">
               <AiOutlineMail /> Email
             </a>
           </div>
