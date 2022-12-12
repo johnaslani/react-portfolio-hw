@@ -2,7 +2,7 @@ import pic1 from "../assets/images/Portfolio.PNG";
 import pic2 from "../assets/images/DigitalMarketing.PNG";
 import pic3 from "../assets/images/WorkDayScheduler.gif";
 import pic4 from "../assets/images/Quiz.gif";
-import pic5 from "../assets/images/Portfolio.PNG";
+import pic5 from "../assets/images/Scheduler.PNG";
 import pic6 from "../assets/images/Weather_Dashboard.PNG";
 import { AiFillGithub } from "react-icons/ai";
 import Project from "./Project";
@@ -23,32 +23,32 @@ const projects = [
     alt: "Code Refractor project",
   },
   {
-    link: "https://johnaslani.github.io/Portfolio/",
-    name: "Portfolio",
-    repo: "https://github.com/johnaslani/Portfolio/",
-    img: pic1,
-    alt: "Portflio project",
+    link: "https://github.com/johnaslani/Work-Day-Scheduler",
+    name: "Work Day Scheduler",
+    repo: "https://github.com/johnaslani/Work-Day-Scheduler",
+    img: pic3,
+    alt: "Work Day Scheduler project",
   },
   {
-    link: "https://johnaslani.github.io/Portfolio/",
-    name: "Portfolio",
-    repo: "https://github.com/johnaslani/Portfolio/",
-    img: pic1,
-    alt: "Portflio project",
+    link: "https://johnaslani.github.io/Quiz/",
+    name: "Quiz",
+    repo: "https://github.com/johnaslani/Quiz",
+    img: pic4,
+    alt: "Quiz project",
   },
   {
-    link: "https://johnaslani.github.io/Portfolio/",
-    name: "Portfolio",
-    repo: "https://github.com/johnaslani/Portfolio/",
-    img: pic1,
-    alt: "Portflio project",
+    link: "https://star-chart7.herokuapp.com/",
+    name: "Scheduler",
+    repo: "https://github.com/TottoMoe/star-chart",
+    img: pic5,
+    alt: "Scheduler project",
   },
   {
-    link: "https://johnaslani.github.io/Portfolio/",
-    name: "Portfolio",
-    repo: "https://github.com/johnaslani/Portfolio/",
-    img: pic1,
-    alt: "Portflio project",
+    link: "https://johnaslani.github.io/Weather-Dashboard/",
+    name: "Weather Dashboard",
+    repo: "https://github.com/johnaslani/Weather-Dashboard",
+    img: pic6,
+    alt: "Weather Dashboard project",
   },
 ];
 

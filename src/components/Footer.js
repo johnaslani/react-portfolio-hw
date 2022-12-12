@@ -12,7 +12,10 @@ function Footer() {
       <div className="d-flex flex-column w-100">
         <div className="d-flex justify-content-between w-100">
           <div className="hover">
-            <a href="https://www.linkedin.com/in/afshinaslani/" className="footerLink">
+            <a
+              href="https://www.linkedin.com/in/afshinaslani/"
+              className="footerLink"
+            >
               <IoLogoLinkedin /> Linkedin
             </a>
           </div>
@@ -22,7 +25,10 @@ function Footer() {
             </a>
           </div>
           <div className="hover">
-            <a href="mailto:aslani.john@gmail.com" className="footerLink">
+            <a
+              href="https://scholar.google.com/citations?hl=en&user=wZqj-scAAAAJ"
+              className="footerLink"
+            >
               <SiGooglescholar /> Google Scholar
             </a>
           </div>

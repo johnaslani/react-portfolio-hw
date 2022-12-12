@@ -1,4 +1,5 @@
 import resume from "../assets/docs/Resume.pdf";
+import AgileMBA from "../assets/docs/Agile_MBA.pdf";
 
 function Resume() {
   return (
@@ -41,7 +42,7 @@ function Resume() {
           </a>
         </li>
         <li>
-          <a href="../assets/docs/Agile_MBA.pdf" download="Agile_MBA.pdf">
+          <a href={AgileMBA}>
             <strong>Agile MBA</strong>
           </a>
         </li>
