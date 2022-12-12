@@ -100,3 +100,29 @@ main {
 .resume {
   text-decoration: underline;
 }
+
+.formLabel {
+  /* text-decoration: underline; */
+  justify-content: left;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  column-width: 100px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5rem;
+  
+
+}
+
+.contact {
+  text-decoration: underline;
+  text-align: center;
+  justify-content: center;
+}
+
+/* .container {
+
+} */

@@ -14,25 +14,28 @@ function Contact(props) {
     setInput({ name: "", message: "", email: "" });
   };
 
-  const formCheck=(e)=>{
+  const formCheck = (e) => {
     if (e.target.name === "email" && !validEmail.test(e.target.value)) {
       setError("Must be a valid email address");
     } else if (!e.target.value) {
       setError(`${e.target.name} is required`);
     }
-  }
+  };
 
   const handleChange = (e) => {
-      setInput({ ...input, [e.target.name]: e.target.value });
-      setError("");
+    setInput({ ...input, [e.target.name]: e.target.value });
+    setError("");
   };
 
   // First we check to see if "edit" prop exists. If not, we render the normal form
   // If the prop "edit" exists, we know to render the update form instead
   return !formSubmitted ? (
     <div>
+      <h2 className="contact">Contact Me</h2>
+      <div className="container"></div>
       {error ? <p>{error}</p> : <></>}
-      <form className="" onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit}>
+        <label className="formLabel">Name</label>
         <input
           type="text"
           placeholder="Enter your name"
@@ -43,6 +46,7 @@ function Contact(props) {
           required
           onBlur={formCheck}
         ></input>
+        <label className="formLabel">Email</label>
         <input
           type="text"
           placeholder="Enter your email"
@@ -53,6 +57,7 @@ function Contact(props) {
           onBlur={formCheck}
           required
         ></input>
+        <label className="formLabel">Message</label>
         <textarea
           type="text"
           placeholder="Enter your message"
@@ -63,7 +68,7 @@ function Contact(props) {
           onBlur={formCheck}
           required
         ></textarea>
-        <button className="">Add bucket list item</button>
+        <button className="">Send Message</button>
       </form>
     </div>
   ) : (
