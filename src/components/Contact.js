@@ -30,45 +30,54 @@ function Contact(props) {
   // First we check to see if "edit" prop exists. If not, we render the normal form
   // If the prop "edit" exists, we know to render the update form instead
   return !formSubmitted ? (
-    <div>
+    <div className="formPage">
       <h2 className="contact">Contact Me</h2>
-      <div className="container"></div>
       {error ? <p>{error}</p> : <></>}
       <form className="form" onSubmit={handleSubmit}>
-        <label className="formLabel">Name</label>
-        <input
-          type="text"
-          placeholder="Enter your name"
-          value={input.name}
-          name="name"
-          className=""
-          onChange={handleChange}
-          required
-          onBlur={formCheck}
-        ></input>
-        <label className="formLabel">Email</label>
-        <input
-          type="text"
-          placeholder="Enter your email"
-          value={input.email}
-          name="email"
-          className=""
-          onChange={handleChange}
-          onBlur={formCheck}
-          required
-        ></input>
-        <label className="formLabel">Message</label>
-        <textarea
-          type="text"
-          placeholder="Enter your message"
-          value={input.message}
-          name="message"
-          className=""
-          onChange={handleChange}
-          onBlur={formCheck}
-          required
-        ></textarea>
-        <button className="">Send Message</button>
+        <div className="formGroup">
+          <label className="formLabel">Name</label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            value={input.name}
+            name="name"
+            className=""
+            onChange={handleChange}
+            required
+            onBlur={formCheck}
+            size="50"
+          ></input>
+        </div>
+        <div className="formGroup">
+          <label className="formLabel">Email</label>
+          <input
+            type="text"
+            placeholder="Enter your email"
+            value={input.email}
+            name="email"
+            className=""
+            onChange={handleChange}
+            onBlur={formCheck}
+            required
+            size="50"
+          ></input>
+        </div>
+        <div className="formGroup">
+          <label className="formLabel">Message</label>
+          <textarea
+            type="text"
+            placeholder="Enter your message"
+            value={input.message}
+            name="message"
+            className=""
+            onChange={handleChange}
+            onBlur={formCheck}
+            required
+            rows="10"
+            cols="50"
+          ></textarea>
+        </div>
+        <button className="formBtn">Send Message</button>
       </form>
     </div>
   ) : (
